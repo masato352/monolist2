@@ -4,7 +4,13 @@ class UsersController < ApplicationController
   def new
     @user = User.new
   end
-  
+
+#Haveしたユーザー
+  #def have_user
+   #@user  = User.find(params[:id])
+   #@have_users = @user.haves
+  #end
+
   def create
     @user = User.new(user_params)
     if @user.save
