@@ -40,6 +40,14 @@
                   </li>
                   <li role="separator" class="divider"></li>
                   <li>
+                    <%= link_to "Haveランキング", new_item_path %>
+                  </li>     
+                  <li role="separator" class="divider"></li>
+                  <li>
+                    <%= link_to "Wantランキング", logout_path, method: "delete" %>
+                  </li>   
+                  <li role="separator" class="divider"></li>
+                  <li>
                     <%= link_to "ログアウト", logout_path, method: "delete" %>
                   </li>
                 </ul>
