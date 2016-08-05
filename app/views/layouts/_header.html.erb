@@ -38,14 +38,17 @@
                   <li>
                     <%= link_to "プロフィール" , current_user  %>
                   </li>
+                  
                   <li role="separator" class="divider"></li>
                   <li>
-                    <%= link_to "Haveランキング", new_item_path %>
-                  </li>     
+                    <%= link_to "Haveランキング", '' %>
+                  </li> 
+                  
                   <li role="separator" class="divider"></li>
                   <li>
-                    <%= link_to "Wantランキング", logout_path, method: "delete" %>
-                  </li>   
+                    <%= link_to "Wantランキング", ''  %>
+                  </li>  
+ 
                   <li role="separator" class="divider"></li>
                   <li>
                     <%= link_to "ログアウト", logout_path, method: "delete" %>
