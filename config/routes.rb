@@ -13,15 +13,9 @@ Rails.application.routes.draw do
   resources :ownerships, only: [:create, :destroy]
   resources :items , only: [:new , :show]
   
-  #resources :rankings do
-  #member do
-    #post 'have'
-    #post 'want'
-  #end
-  
-  #get    'have', to: 'rankings#have'
-  #get    'want' , to: 'rankings#want'
-  
+  get 'ranking/have'
+  get 'ranking/want'
+
 end
   #resources :wants, only: [:create, :destroy]
   #resources :haves, only: [:create, :destroy]
@@ -80,4 +74,3 @@ end
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-#end
