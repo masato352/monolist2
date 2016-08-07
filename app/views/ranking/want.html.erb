@@ -7,10 +7,8 @@
   <div class="container-inner inner-default clearfix">
 <h3>Want item ランキングページ</h3>
 
-<ol>
-<% @want_items.each do |item| %>
+<% @want_items.each.with_index(1) do |item, i| %> 
       <div class="item-box">
-        <div><li></li></div>          
         <div class="image">
           <div class="img-wrap">
            <%= image_tag(item.large_image , alt: item.title) %>
@@ -19,12 +17,11 @@
 
         <div class="detail">
           <p class="title">
-           <%= item.title %>
+           <%= i %>. <%= item.title %>
           </p>
         </div>
         <%= render 'items/action' , item: item if logged_in? %>
       </div>
 <% end %>
-</ol> 
   </div>
 </div>
